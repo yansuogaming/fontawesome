@@ -1,0 +1,6 @@
+build apk: 
+npx cap sync android
+cd android
+./gradlew --stop
+./gradlew clean
+./gradlew assembleDebug
